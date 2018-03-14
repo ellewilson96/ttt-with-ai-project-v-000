@@ -18,6 +18,7 @@ end
   def over?
     won? || draw?
   end
+end
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
