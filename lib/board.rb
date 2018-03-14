@@ -1,9 +1,12 @@
 class Board
 
-  @@cells = []
 
   def initialize
     self.reset!
+  end
+
+  def self.cells
+    @@cells = []
   end
 
   def reset!
