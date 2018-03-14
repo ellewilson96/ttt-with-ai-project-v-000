@@ -31,10 +31,11 @@ class Game
   end
 
   def winner
-    if won? == true 
+    if won? == true
       return "#{token}"
-    else 
+    else
       nil
     end
+  end
 
 end
