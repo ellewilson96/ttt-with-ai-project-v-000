@@ -1,10 +1,8 @@
 class Board
-  attr_accessor :name
 
   @@cells = []
 
-  def initialize(name)
-    @name = name
+  def initialize
   end
 
   def reset!
