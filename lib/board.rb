@@ -1,6 +1,6 @@
 class Board
 
-property :cells, board
+  property :cells, board
 
   def initialize
     self.reset!
