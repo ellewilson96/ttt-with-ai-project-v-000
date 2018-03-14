@@ -26,7 +26,7 @@ end
   end
 
   def turn_count
-    cells.count("X") + cells.count("O")
+    cells.count("X" || "O")
   end
 
 end
