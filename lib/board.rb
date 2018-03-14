@@ -30,7 +30,7 @@ end
   end
 
   def taken?
-    position(input) == "X" || "O"
+    position == "X" || "O"
   end
 
 end
