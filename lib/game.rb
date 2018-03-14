@@ -15,6 +15,6 @@ class Game
   end
 
   def over?
-    WIN_COMBINATIONS.any?{|e| e == @token}
+    won? || draw?
   end
 end
