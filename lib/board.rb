@@ -21,5 +21,7 @@ end
     cells[input.to_i - 1]
   end
 
-
+  def full?
+    cells.all?{ |e| e = "X" || e = "O"}
+  end
 end
