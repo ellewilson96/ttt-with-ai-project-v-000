@@ -54,10 +54,14 @@ class Game
    end
 
    def play
-     puts "Please make your move."
-     gets.strip
-     self.over?
-     self.turn
+     while !over?
+       turn
+     end
+     if won?
+       puts "Congratulations!"
+     elsif draw?
+       puts "Cat's Game!"
+     end
    end
 
 end
