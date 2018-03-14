@@ -31,5 +31,10 @@ end
 
   def taken?(input)
     !(position(input) == "" || position(input) == " ")
-end
+  end
+
+  def valid_move?(input)
+    taken?(input) == false
+  end
+
 end
