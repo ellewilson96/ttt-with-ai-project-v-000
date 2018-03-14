@@ -7,11 +7,11 @@ class Board
   end
 
   def self.cells
-    @@cells << self
+    :cells << self
   end
 
   def reset!
-    @@cells.clear
+    :cells.clear
   end
 
 def position(move)
