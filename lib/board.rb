@@ -2,7 +2,8 @@ class Board
 
   @@cells = []
 
-  def initialize(board)
+  def initialize
+
   end
 
   def reset!
