@@ -23,9 +23,9 @@ end
 
   def full?
     if cells.all?{ |e| e = "X" && e = "O"} == true
-      false
-    else
       true
+    else
+      false
   end
 end
 end
