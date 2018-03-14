@@ -1,17 +1,17 @@
 class Board
 
-  property :cells, board
-
   def initialize
     self.reset!
   end
 
+@@cells = []
+
   def self.cells
-    :cells << self
+    @@cells << self
   end
 
   def reset!
-    :cells.clear
+    @@cells.clear
   end
 
 def position(move)
