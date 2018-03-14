@@ -34,7 +34,7 @@ end
   end
 
   def valid_move?(input)
-    (taken?(input) == false && full? == false) ? true : false
+    taken?(input) && full?
   end
 
 end
