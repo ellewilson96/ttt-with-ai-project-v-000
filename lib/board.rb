@@ -1,6 +1,6 @@
 class Board
 
-@@cells = []
+property :cells, board
 
   def initialize
     self.reset!
