@@ -22,7 +22,7 @@ end
   end
 
   def full?
-    cells.all?{ |e| e == "X" || e == "O"}
+    cells.all?{ |token| token == "X" || token == "O"}
   end
 
   def turn_count
