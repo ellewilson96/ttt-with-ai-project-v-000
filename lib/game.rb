@@ -19,11 +19,11 @@ class Game
   end
 
   def won?
-WIN_COMBINATIONS.find do |win_combo|
-  board[win_combo[0]] == board[win_combo[1]] &&
-  board[win_combo[0]] == board[win_combo[2]] &&
-  position_taken?(board, win_combo[1])
-end
+  WIN_COMBINATIONS.detect do |combo|
+    @board.cells[combo[0]] == @board.cells[combo[1]] &&
+    @board.cells[combo[1]] == @board.cells[combo[2]] &&
+    @board.taken?(combo[0]+1)
+  end
 end
 
 end
