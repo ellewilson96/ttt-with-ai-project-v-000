@@ -38,4 +38,7 @@ class Game
     end
   end
 
+  def self.turn
+    
+
 end
