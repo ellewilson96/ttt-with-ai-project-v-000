@@ -27,6 +27,9 @@ class Game
 end
 
   def draw?
-    @board.cells.count("X") == @board.cells.count("O")
+  if won? == false && (@board.cells.count("X") == @board.cells.count("O"))
+    true
+  else
+    false
   end
 end
