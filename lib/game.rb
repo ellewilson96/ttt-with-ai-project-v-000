@@ -29,4 +29,3 @@ class Game
   @board.full? && !won?
 end
 end
-end
