@@ -10,7 +10,7 @@ class Board
   end
 
   def self.cells
-    :cells << self
+    @@cells << self
   end
 
   def display_board(board)
