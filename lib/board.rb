@@ -38,6 +38,6 @@ end
   end
 
   def update(input)
-    cells << input
+    @cells << input
 end
 end
