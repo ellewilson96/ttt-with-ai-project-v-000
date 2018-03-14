@@ -54,6 +54,11 @@ class Game
    end
 
    def play
+     puts "Please make your move."
+     gets.strip 
+     self.turn
+     self.over?
+     
    end
 
 end
