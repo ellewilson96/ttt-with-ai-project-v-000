@@ -30,4 +30,11 @@ class Game
   @board.full? && !won?
   end
 
+  def winner
+    if won? == true 
+      return "#{token}"
+    else 
+      nil
+    end
+
 end
