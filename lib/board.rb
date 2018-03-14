@@ -5,8 +5,6 @@ class Board
     reset!
   end
 
-@@cells = []
-
   def reset!
     @@cells = Array.new(9, " ")
   end
