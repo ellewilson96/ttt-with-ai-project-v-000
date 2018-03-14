@@ -8,8 +8,8 @@ class Board
     @@cells.clear
   end
 
-  def self.cells(board)
-    @@cells << board
+  def self.cells
+    @@cells << self
   end
 
   def display_board(board)
