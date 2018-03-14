@@ -19,13 +19,12 @@ class Game
   end
 
   def won?
-  WIN_COMBINATIONS.find do |combo|
-    @board.cells[combo[0]] == @board.cells[combo[1]] &&
-    @board.cells[combo[1]] == @board.cells[combo[2]] &&
-    @board.taken?[combo[0]+1]
+    WIN_COMBINATIONS.detect do |combo|
+      @board.cells[combo[0]] == @board.cells[combo[1]] &&
+      @board.cells[combo[1]] == @board.cells[combo[2]] &&
+      @board.taken?(combo[0]+1)
+    end
   end
-end
-
   def draw?
   @board.full? && !won?
 end
