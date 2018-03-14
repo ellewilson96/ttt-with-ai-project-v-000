@@ -30,6 +30,6 @@ end
   end
 
   def taken?(input)
-    cells[input.to_i - 1] != "X" || "O" ? false : true
+    cells[input.to_i - 1] == "X" || "O" ? false : true
 end
 end
