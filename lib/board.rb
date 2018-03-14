@@ -30,6 +30,6 @@ end
   end
 
   def taken?(input)
-    position(input) == "X" || "O" ? true : false
+    !(position(input) == "" || position(input) == " ")
 end
 end
