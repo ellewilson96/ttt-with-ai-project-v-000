@@ -13,4 +13,8 @@ class Game
   def current_player
     self.token
   end
+
+  def over?
+    WIN_COMBINATIONS.any?{|e| e == @token}
+  end
 end
