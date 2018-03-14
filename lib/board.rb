@@ -23,5 +23,9 @@ end
 
   def full?
     cells.all?{ |e| e == "X" || e == "O"}
-end
+  end
+
+  def turn_count 
+    cells.count
+  end
 end
