@@ -22,9 +22,10 @@ end
   end
 
   def full?
-    if cells.all?{ |e| e = "X" || e = "O"} == true 
+    if cells.all?{ |e| e = "X" || e = "O"} == true
       true
     else
       false
   end
+end
 end
