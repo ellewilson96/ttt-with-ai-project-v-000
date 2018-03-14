@@ -3,7 +3,7 @@ class Board
   @@cells = []
 
   def initialize
-    self.reset!
+    self.cells.reset!
   end
 
   def reset!
