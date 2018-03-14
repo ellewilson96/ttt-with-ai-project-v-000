@@ -26,4 +26,7 @@ class Game
   end
 end
 
+  def draw?
+    @board.cells.count("X") == @board.cells.count("O")
+
 end
