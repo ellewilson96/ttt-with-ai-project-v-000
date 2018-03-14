@@ -29,8 +29,8 @@ end
     cells.count("X") + cells.count("O")
   end
 
-  def taken?
-    position == "X" || "O"
+  def taken?(input)
+    cells[input.to_i - 1] == "X" || "O"
   end
 
 end
