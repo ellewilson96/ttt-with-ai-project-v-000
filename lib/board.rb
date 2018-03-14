@@ -1,6 +1,5 @@
 class Board
-  attr_accessor :name
-
+  
   @@cells = []
 
   def initialize
