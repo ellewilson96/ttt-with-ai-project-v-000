@@ -22,6 +22,6 @@ end
   end
 
   def full?
-    cells.all?{ |e| e == "X" && e == "O"}
+    cells.all{ |e| e == "X" || e == "O"}
 end
 end
