@@ -17,4 +17,9 @@ class Board
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def position(move)
+   position = move.to_i - 1
+   position
+end
+
 end
