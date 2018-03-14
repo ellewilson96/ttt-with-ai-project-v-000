@@ -2,8 +2,8 @@ class Board
 
   @@cells = []
 
-  def initialize
-
+  def initialize(name)
+    @name = name
   end
 
   def reset!
