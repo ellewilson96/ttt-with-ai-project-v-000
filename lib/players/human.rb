@@ -1,8 +1,3 @@
-module Human 
-  
-    def move(input)
-      return input
-    end
-      
+module Human < Player
 
 end
