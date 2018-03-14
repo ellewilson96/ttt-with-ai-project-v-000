@@ -9,7 +9,7 @@ class Board
     @@cells.clear
   end
 
-  def cells
+  def cells=
     @@cells
   end
 
