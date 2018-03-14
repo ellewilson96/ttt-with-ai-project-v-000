@@ -1,4 +1,4 @@
-class Human < Players
+class Human < Player
   include Player
   def move(input)
   end 
