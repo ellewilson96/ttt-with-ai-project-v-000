@@ -25,7 +25,7 @@ end
     cells.all?{ |e| e == "X" || e == "O"}
   end
 
-  def turn_count 
+  def turn_count
     cells.count
   end
 end
