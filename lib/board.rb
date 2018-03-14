@@ -1,21 +1,19 @@
 class Board
 
+@@cells = []
 
   def initialize
     self.reset!
   end
 
   def self.cells
-    @@cells = []
+    @@cells << self
   end
 
   def reset!
     @@cells.clear
   end
 
-  def self.cells
-    @@cells << self
-  end
 
   def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
