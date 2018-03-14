@@ -1,5 +1,4 @@
 class Board
-
   @@cells = []
 
   def initialize
@@ -9,7 +8,7 @@ class Board
     @@cells.clear
   end
 
-  def cells=
+  def self.cells
     @@cells
   end
 
