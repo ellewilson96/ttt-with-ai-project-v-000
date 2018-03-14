@@ -13,6 +13,7 @@ class Game
   def current_player
     @board.turn_count % 2 == 0 ? player_1 : player_2
   end
+end
 
   def over?
     won? || draw?
@@ -24,8 +25,8 @@ class Game
       @board.cells[combo[1]] == @board.cells[combo[2]] &&
     end
 
-
   def draw?
   @board.full? && !won?
 end
+
 end
