@@ -39,5 +39,5 @@ end
 
   def update(input)
     cells << input
-
+end
 end
