@@ -26,6 +26,6 @@ end
   end
 
   def turn_count
-    cells.count
+    return cells.count
   end
 end
